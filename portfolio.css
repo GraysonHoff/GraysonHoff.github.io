@@ -1,7 +1,12 @@
+/*  --- CSS VARIABLES --- */
 :root {
   --text-color: white;
   --background-color: black;
   --nice-gray: #b4b4b4;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -11,6 +16,7 @@ body {
   overflow-x: hidden;
 }
 
+/* --- START OF NAVBAR STYLES --- */
 #navbar {
   display: flex;
   justify-content: flex-end;
@@ -22,14 +28,19 @@ body {
   z-index: 10;
 }
 
-.nav-list {
+.nav-links {
   display: flex;
   margin-right: 3em;
+  position: relative;
+}
+
+.nav-links li {
   list-style: none;
 }
 
-.nav-list a {
+.nav-links a {
   display: block;
+  position: relative;
   font-size: 1.3rem;
   padding: 1rem;
   color: var(--text-color);
@@ -37,6 +48,29 @@ body {
   font-family: Verdana, 'Gill Sans', sans-serif;
 }
 
+.nav-links li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: var(--nice-gray);
+}
+
+.nav-links li a:hover::before {
+  width: 100%;
+  transition: all 0.4s ease-in-out;
+}
+
+.nav-links li a:hover {
+  transition: all 0.4s ease-in-out;
+  color: var(--nice-gray);
+}
+/* --- END OF NAVBAR STYLES --- */
+
+
+/* --- START OF WELCOME SECTION STYLES --- */
 #welcome-section {
   display: flex;
   flex-direction: column;
@@ -47,14 +81,17 @@ body {
   background-color: var(--background-color);
   font-family: Verdana, 'Gill Sans', sans-serif;
 }
+/* --- END OF WELCOME SECTION STYLES --- */
 
+
+/* --- START OF ABOUT ME SECTION STYLES --- */
 #about-me {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 75vh;
+  height: 100vh;
   background-color: var(--background-color);
   font-family: Verdana, 'Gill Sans', sans-serif;
   position: relative;
@@ -69,12 +106,14 @@ body {
   max-width: 700px;
   margin: 5.5rem auto;
 }
+/* --- END OF ABOUT ME SECTION STYLES --- */
 
-/* start of project styles */
+
+/* --- START OF PROJECTS SECTION STYLES --- */
 #projects {
   display: flex;
   flex-direction: column;
-  justify-content: top;
+  justify-content: center;
   align-items: center;
   width: 100%;
   height: 100vh;
@@ -99,10 +138,6 @@ body {
   border-radius: 50%;
 }
 
-.project-list {
-  /* border: 1px solid red; */
-}
-
 .project-tile {
   width: 30%;
   text-align: center;
@@ -111,8 +146,10 @@ body {
   margin-top: 6.5rem;
   padding: 0.5em;
 }
-/* end of project styles */
+/* --- END OF PROJECT SECTION STYLES --- */
 
+
+/*  --- START OF CONTACT SECTION STYLES --- */
 #contact-section {
   display: flex;
   flex-direction: column;
@@ -128,16 +165,13 @@ body {
   color: var(--text-color);
   text-decoration: none;
 }
+/*  --- END OF CONTACT SECTION STYLES */
 
+
+/*  --- START OF FOOTER STYLES --- */
 footer {
   display: flex;
   justify-content: flex-end;
   margin-right: 2rem;
 }
-
-/* just so fcc will accept it */
-/* @media (max-width: 720px) {
-  * {
-    border: 2px solid blue;
-  }
-} */
+/*  --- END OF FOOTER STYLES --- */
