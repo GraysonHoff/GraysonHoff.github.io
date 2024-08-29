@@ -1,84 +1,67 @@
 /*  --- CSS VARIABLES --- */
 :root {
-  --text-color: white;
-  --background-color: black;
+  --text-color: lightgray;
+  --background-color: #222222;
   --gray-hover: #b4b4b4;
 }
 
-html {
-  scroll-behavior: smooth;
+* {
+  box-sizing: border-box;
 }
 
 body {
-  box-sizing: border-box;
   background-color: var(--background-color);
   color: var(--text-color);
-  /* overflow: hidden; */
+}
+
+/* this is the div that holds everything. main content div is below. */
+#everything {
+  /* border: 3px solid yellow; */
+  width: 45%;
+  margin: 10em auto;
 }
 
 /* --- START OF NAVBAR STYLES --- */
-#navbar {
-  /* border: 1px solid blue; */
+#navbar ul {
+  /* border: 2px solid green; */
+  list-style: none;
   display: flex;
   justify-content: center;
-  position: relative;
-  top: 4rem;
-  left: 0;
-  width: 100%;
-  background-color: var(--background-color);
-  /* z-index: 10; */
+  margin: 0;
+  padding: 0;
 }
 
-.nav-links {
-  display: flex;
-  margin-right: 3em;
-  position: relative;
-}
-
-.nav-links li {
-  list-style: none;
-}
-
-.nav-links a {
-  display: block;
-  position: relative;
-  font-size: 1.3rem;
+#navbar a {
   padding: 1rem;
-  color: var(--text-color);
+  font-size: 20px;
+  font-family: 'Verdana';
   text-decoration: none;
-  font-family: Verdana, 'Gill Sans', sans-serif;
-}
-
-.nav-links li a:hover {
-  transition: all 0.3s ease-in;
-  color: var(--gray-hover);
-}
-
-.nav-links li a:not(:hover) {
   color: var(--text-color);
-  transition: all 0.3s ease-out;
 }
 /* --- END OF NAVBAR STYLES --- */
 
 hr {
-  margin-top: 4rem;
-  width: 20%;
+  width: 290px;
+  background-color: var(--text-color);
+  border-color: var(--text-color);
 }
 
-/* --- START OF WELCOME SECTION STYLES --- */
-#welcome-section {
+/* --- START OF MAIN SECTION STYLES --- */
+#mainContent {
   /* border: 1px solid red; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin-top: 6rem;
-  height: 50vh;
-  background-color: var(--background-color);
-  font-family: Verdana, 'Gill Sans', sans-serif;
+  display: block;
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 16.5px;
+  /* background-color: var(--background-color); */
+  /* font-family: Verdana, 'Gill Sans', sans-serif; */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* width: 75%; */
+  /* margin: 4rem auto; */
 }
-/* --- END OF WELCOME SECTION STYLES --- */
+
+/* --- END OF MAIN SECTION STYLES --- */
 
 
 /* --- START OF ABOUT ME SECTION STYLES --- */
@@ -108,6 +91,7 @@ hr {
 
 /* --- START OF PROJECTS SECTION STYLES --- */
 #projects {
+  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -116,7 +100,6 @@ hr {
   height: 100vh;
   background-color: var(--background-color);
   font-family: Verdana, 'Gill Sans', sans-serif;
-  /* border: 1px solid white; */
 }
 
 #projects a {
@@ -127,7 +110,7 @@ hr {
 #projects img {
   display: block;
   margin: 0 auto;
-  width: 200px;
+  width: 150px;
 }
 
 #projects hr {
@@ -138,7 +121,7 @@ hr {
 .project-tile {
   width: 30%;
   text-align: center;
-  border: 1px solid white;
+  border: 2px solid white;
   border-radius: 35px;
   margin-top: 6.5rem;
   padding: 0.5em;
