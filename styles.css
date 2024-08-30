@@ -37,6 +37,11 @@ body {
   font-family: 'Verdana';
   text-decoration: none;
   color: var(--text-color);
+  transition: color 0.2s;
+}
+
+#navbar a:hover {
+  color: white;
 }
 /* --- END OF NAVBAR STYLES --- */
 
@@ -48,63 +53,26 @@ hr {
 
 /* --- START OF MAIN SECTION STYLES --- */
 #mainContent {
-  /* border: 1px solid red; */
   display: block;
   margin-top: 3rem;
   text-align: center;
   font-size: 16.5px;
-  /* background-color: var(--background-color); */
-  /* font-family: Verdana, 'Gill Sans', sans-serif; */
-  /* display: flex; */
-  /* justify-content: center; */
-  /* width: 75%; */
-  /* margin: 4rem auto; */
 }
-
 /* --- END OF MAIN SECTION STYLES --- */
 
 
-/* --- START OF ABOUT ME SECTION STYLES --- */
-#about-me {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  background-color: var(--background-color);
-  font-family: Verdana, 'Gill Sans', sans-serif;
-  position: relative;
-}
-
-#about-me p {
-  margin: 2rem;
-}
-
-.about-me-text {
-  /* border: 1px solid red; */
-  max-width: 700px;
-  margin: 5.5rem auto;
-}
-/* --- END OF ABOUT ME SECTION STYLES --- */
-
-
 /* --- START OF PROJECTS SECTION STYLES --- */
-#projects {
-  border: 1px solid red;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  background-color: var(--background-color);
-  font-family: Verdana, 'Gill Sans', sans-serif;
+#projects p, h3, a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-style: none;
+  letter-spacing: 1px;
 }
 
-#projects a {
-  text-decoration: none;
-  color: var(--text-color);
+#projects div {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 #projects img {
@@ -130,21 +98,7 @@ hr {
 
 
 /*  --- START OF CONTACT SECTION STYLES --- */
-#contact-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  background-color: var(--background-color);
-  font-family: Verdana, 'Gill Sans', sans-serif;
-}
 
-#contact-section a {
-  color: var(--text-color);
-  text-decoration: none;
-}
 /*  --- END OF CONTACT SECTION STYLES */
 
 
