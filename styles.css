@@ -19,6 +19,7 @@ body {
   /* border: 3px solid yellow; */
   width: 45%;
   margin: 10em auto;
+  min-width: 300px;
 }
 
 /* --- START OF NAVBAR STYLES --- */
@@ -37,11 +38,11 @@ body {
   font-family: 'Verdana';
   text-decoration: none;
   color: var(--text-color);
-  transition: color 0.2s;
+  transition: color 0.3s;
 }
 
 #navbar a:hover {
-  color: white;
+  color: gray;
 }
 /* --- END OF NAVBAR STYLES --- */
 
@@ -53,6 +54,7 @@ hr {
 
 /* --- START OF MAIN SECTION STYLES --- */
 #mainContent {
+  /* border: 1px solid red; */
   display: block;
   margin-top: 3rem;
   text-align: center;
@@ -89,7 +91,7 @@ hr {
 .project-tile {
   width: 30%;
   text-align: center;
-  border: 2px solid white;
+  border: 2px solid gray;
   border-radius: 35px;
   margin-top: 6.5rem;
   padding: 0.5em;
@@ -103,9 +105,17 @@ hr {
 
 
 /*  --- START OF FOOTER STYLES --- */
-footer {
+/* footer {
+  border: 1px solid green;
   display: flex;
   justify-content: flex-end;
   margin-right: 2rem;
-}
+} */
 /*  --- END OF FOOTER STYLES --- */
+
+
+/* --- MEDIA QUERIES --- */
+@media screen and (max-width: 500px) {
+  
+}
+/* --- END OF MEDIA QUERIES --- */
