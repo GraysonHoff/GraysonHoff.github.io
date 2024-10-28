@@ -16,7 +16,6 @@ body {
 
 /* this is the div that holds everything. main content div is below. */
 #everything {
-  /* border: 3px solid yellow; */
   width: 45%;
   margin: 10em auto;
   min-width: 300px;
@@ -24,7 +23,6 @@ body {
 
 /* --- START OF NAVBAR STYLES --- */
 #navbar ul {
-  /* border: 2px solid green; */
   list-style: none;
   display: flex;
   justify-content: center;
@@ -54,11 +52,11 @@ hr {
 
 /* --- START OF MAIN SECTION STYLES --- */
 #mainContent {
-  /* border: 1px solid red; */
   display: block;
   margin-top: 3rem;
   text-align: center;
-  font-size: 16.5px;
+  font-size: 17px;
+  font-family: 'Inter Variable';
 }
 /* --- END OF MAIN SECTION STYLES --- */
 
@@ -104,16 +102,6 @@ hr {
 /*  --- END OF CONTACT SECTION STYLES */
 
 
-/*  --- START OF FOOTER STYLES --- */
-/* footer {
-  border: 1px solid green;
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 2rem;
-} */
-/*  --- END OF FOOTER STYLES --- */
-
-
 /* --- MEDIA QUERIES --- */
 @media screen and (max-width: 400px) {
   #everything {
@@ -123,7 +111,7 @@ hr {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1350px) {
   #projects div {
     display: block;
     margin: 2rem auto;
